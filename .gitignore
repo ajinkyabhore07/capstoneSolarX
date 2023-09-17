@@ -2,6 +2,8 @@
 *.txt
 node_modules/
 notes/
+migrations/
+test/
 
 package-lock.json
 package.json
