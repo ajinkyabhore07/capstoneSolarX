@@ -1,1 +1,1 @@
-contract CarbonCredits
+contract CarbonCredits{}
