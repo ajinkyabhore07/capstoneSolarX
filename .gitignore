@@ -4,6 +4,7 @@ node_modules/
 notes/
 migrations/
 test/
+build/
 
 package-lock.json
 package.json
