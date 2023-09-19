@@ -12,3 +12,4 @@ scripts/
 package-lock.json
 package.json
 truffle-config.js
+hardhat.config.js
