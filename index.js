@@ -30,6 +30,7 @@ app.get("/getBalance/:address",async (req,res) =>{
             console.error(error);
             res.status(500).json.error({error:"Internal server error"});
         }
+    });
 
 app.post("/transferCredits",async(req,res)=>{
     try{
@@ -46,5 +47,4 @@ app.post("/transferCredits",async(req,res)=>{
 app.listen((port, ()=>{
     console.log("server is running on port ${port}");
 }))
-    }
-);
+  
