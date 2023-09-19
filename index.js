@@ -27,7 +27,24 @@ app.get("/getBalance/:address",async (req,res) =>{
             balance:ethers.formatEther(response)
         })
      } catch (error){
-            console.error
+            console.error(error);
+            res.status(500).json.error({error:"Internal server error"});
         }
-}
-)
+
+app.post("/transferCredits",async(req,res)=>{
+    try{
+        const{to,amount} = req.body;
+        const transaction = await contract.transferCredits(to,amount);
+        await transaction.wait();
+        res.json({messsage:"credits transferred successfully"});
+    }catch(error){
+        console.error(error);
+        res.status(500).json.error({error:"Internal server error"});
+    }
+});
+        
+app.listen((port, ()=>{
+    console.log("server is running on port ${port}");
+}))
+    }
+);
