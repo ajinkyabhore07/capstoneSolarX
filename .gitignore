@@ -5,6 +5,9 @@ notes/
 migrations/
 test/
 build/
+artifacts/
+cache/
+scripts/
 
 package-lock.json
 package.json
