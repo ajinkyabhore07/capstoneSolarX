@@ -68,39 +68,6 @@
       "artifacts": [
         "Storage"
       ]
-    },
-    "/workspaces/capstoneSolarX/contracts/trial.sol": {
-      "lastModificationDate": 1695107121648,
-      "contentHash": "4b0e20d9f40f6984c53c3ea5726743f2",
-      "sourceName": "contracts/trial.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [],
-      "artifacts": [
-        "CarbonCredits"
-      ]
     }
   }
 }

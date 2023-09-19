@@ -29,18 +29,20 @@ module.exports = {
         url:RPC_PROVIDER,
         accounts:[`0x${PRIVATE_KEY}`], 
        },
-      solidity:{
-        compilers:[{
-          version:"0.8.0",
-          settings:{
-            optimizer:{
-              enabled:true,
-              runs:200,
-            }
-          }
-        }
-      ]
-    },
+      },
+      solidity: "0.8.19",
+    //   solidity:{
+    //     compilers:[{
+    //       version:"0.8.0",
+    //       settings:{
+    //         optimizer:{
+    //           enabled:true,
+    //           runs:200,
+    //         }
+    //       }
+    //     }
+    //   ]
+    // },
     paths:{sources:"./contracts",
       tests:"./test",
       cache:"./cache",
@@ -52,5 +54,4 @@ module.exports = {
     etherscan:{
       apiKey:ETHERSCAN_API_KEY
     },
-  },
-};
+  }
